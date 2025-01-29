@@ -1,0 +1,42 @@
+<!-- NAVBAR -->
+<nav class="fixed w-full bg-white shadow-md">
+  <div class="container mx-auto px-4">
+    <div class="flex py-2 items-center border-2 border-none w-full">
+      <div class="flex-none w-60 text-nowrap flex flex-row items-center border-2 border-none">
+        <img src="<%= asset_path('rose.png') %>" alt="logo" class="w-10 h-10 me-2">
+        <h1 class="font-meow-script text-5xl font-extrabold text-pink-500">Lilly Rose</h1>
+      </div>
+      <div class="grow flex px-6 justify-center content-center border-2 border-none">
+        <div class="px-4">
+          <a href="">Accueil</a>
+        </div>
+        <div class="px-4">
+          <a href="">Nos services</a>
+        </div>
+        <div class="px-4">
+          <a href="">Qui nous sommes</a>
+        </div>
+        <div class="px-4">
+          <a href="">Contact</a>
+        </div>
+      </div>
+      <div class="w-20 text-right justify-items-end border-2 border-none">
+        <img src="<%= asset_path('utilisateur.png') %>" alt="login" class="w-10 h-10">
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="w-full h-screen bg-center bg-cover" style="background-image: url('<%= asset_path('fleurs1.jpg') %>');">
+  <!-- TITRE HOME -->
+  <div class="container mx-auto flex flex-col ps-10 items-start justify-center h-full text-none">
+    <h1 class="font-meow-script text-5xl font-extrabold text-left">Bienvenue sur  le site de Lilly Rose</h1>
+    <p>Vous faire plaisir avec des fleurs est notre passion.</p>
+    <button class="bg-pink-500 hover:bg-pink-800 text-white font-bold py-2 px-4 rounded-full mt-5">
+      Contactez-nous
+    </button>
+  </div>
+  <!-- FOOTER -->
+  <div class="flex justify-center items-center border-2 border-none w-full h-20 bg-pink-500">
+    <p class="text-white">© 2021 Lilly Rose</p>
+  </div>
+</div>
