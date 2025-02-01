@@ -1,0 +1,28 @@
+<!-- NAVBAR -->
+<nav class="fixed w-full">
+  <div class="container mx-auto mt-4 px-4 border-1 shadow-md rounded-full bg-opacity-50 bg-white border-gray-500 border-solid">
+    <div class="flex py-2 items-center">
+      <div class="flex-none w-60 text-nowrap flex flex-row items-center border-2 border-none">
+        <img src="<%= asset_path('logo.png') %>" alt="logo" class="w-10 h-10 me-2">
+        <h1 class="font-meow-script text-5xl font-extrabold text-pink-500">Lilly Rose</h1>
+      </div>
+      <div class="grow flex px-6 text-center justify-center items-center content-center border-2 border-none">
+        <div class="px-4">
+          <%= link_to 'Accueil', root_path, class: 'hover:font-bold duration-100 hover:text-pink-500' %>
+        </div>
+        <div class="px-4">
+          <%= link_to 'Nos Services', services_path, class: 'hover:font-bold duration-100 hover:text-pink-500' %>
+        </div>
+        <div class="px-4">
+          <%= link_to 'Qui nous sommes', company_path, class: 'hover:font-bold duration-100 hover:text-pink-500' %>
+        </div>
+        <div class="px-4">
+          <%= link_to 'Contact', contact_path, class: 'hover:font-bold duration-100 hover:text-pink-500' %>
+        </div>
+      </div>
+      <div class="w-20 text-right justify-items-end border-2 border-none">
+        <img src="<%= asset_path('utilisateur.png') %>" alt="login" class="w-10 h-10">
+      </div>
+    </div>
+  </div>
+</nav>

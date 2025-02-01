@@ -27,6 +27,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
 
+    <!-- Acces aux icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+
   </head>
 
   <body>
@@ -34,5 +37,6 @@
     <main>
       <%= yield %>
     </main>
+    <%= javascript_include_tag 'navigation', 'data-turbo-track': 'reload' %>
   </body>
 </html>

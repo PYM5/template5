@@ -1,0 +1,46 @@
+<!-- NAVBAR FULL sur la largeur de l'écran -->
+
+
+<div class="bg-white fixed z-50 top-0 w-full shadow-md ">
+
+  <!-- NAVBAR DESKTOP affichée quand la résolution est supérieure à la valeur de custombp (Tailwind.config.js) -->
+  <nav class="custombp:hidden block">
+    <div class="bg-white flex mx-auto px-5 py-2 gap-4">
+      <div class="justify-start">
+        <div class="flex flex-nowrap space-x-2">
+          <img src="<%= asset_path('logo.png') %>" alt="logo" class="w-9 h-9">
+          <h1 class="font-meow-script text-4xl font-extrabold text-pink-500">Lilly Rose</h1>
+        </div>
+      </div>
+      <div class="flex-grow ">
+        <div class="h-full flex flex-nowrap space-x-5 justify-center items-center">
+          <%= link_to 'Accueil' , root_path, class:'hover:border-b-2 hover:border-pink-500' %>
+          <%= link_to 'Nos Services' , services_path, class:'hover:border-b-2 hover:border-pink-500' %>
+          <%= link_to 'Qui nous sommes' , company_path, class:'hover:border-b-2 hover:border-pink-500' %>
+          <%= link_to 'Contact' , contact_path, class:'hover:border-b-2 hover:border-pink-500' %>
+        </div>
+      </div>
+      <div class="justifiy-end">
+        <img src="<%= asset_path('utilisateur.png') %>" alt="login" class="w-10 h-10">
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAVBAR MOBILE affichée quand la résolution est inférieure à la valeur de custombp (Tailwind.config.js) -->
+  <nav class="custombp:block hidden min-w-max">
+    <div class="bg-white flex mx-auto px-5 py-2 gap-4">
+      <div class="justify-start content-center">
+        <i class="fa-solid fa-bars text-2xl text-pink-500 cursor-pointer" onclick="toggleMenu()"></i>
+      </div>
+      <div class="flex-grow">
+        <div class="h-full flex flex-nowrap space-x-2 justify-center items-center">
+          <img src="<%= asset_path('logo.png') %>" alt="logo" class="w-9 h-9">
+          <h1 class="font-meow-script text-4xl font-extrabold text-pink-500">Lilly Rose</h1>
+        </div>
+      </div>
+      <div class="justifiy-end">
+        <img src="<%= asset_path('utilisateur.png') %>" alt="login" class="w-10 h-10">
+      </div>
+    </div>
+  </nav>
+</div>

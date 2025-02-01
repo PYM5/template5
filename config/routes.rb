@@ -12,7 +12,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  root "home#index"
-  get "test" => "home#test"
+  root "pages#home"
+  get "services" => "pages#services"
+  get "company" => "pages#company"
+  get "contact" => "pages#contact"
+
+  get "test" => "pages#test"
 
 end
