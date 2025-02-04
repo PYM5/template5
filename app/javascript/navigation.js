@@ -1,9 +1,14 @@
+// ------------------------------------------------------
+// FUNCTION POUR SWITCHER LA NAVBAR DESKTOP OU MOBILE
+// Utilise la classe hidden pour cacher ou montrer le menu
+// Utilise dans la partie HTML la variable TailwindCSS custombp
 function toggleMenu() {
   const menu = document.getElementById("homeMenu");
   menu.classList.toggle("hidden");
 }
 
-// JavaScript to handle the Back to Top button
+// ------------------------------------------------------
+// BOUTON GO TO THE TOP OF THE PAGE
 document.addEventListener("DOMContentLoaded", function() {
   // Get the button
   var backToTopButton = document.getElementById("backToTop");
@@ -25,3 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   };
 });
+
+// ------------------------------------------------------
+// BOUTON GO TO THE TOP OF THE PAGE

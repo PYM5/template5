@@ -1,10 +1,18 @@
 <!-- NAVBAR + MENU HOME -->
-<%= render "shared/navbar1b" %>
-<%= render "shared/homemenu" %>
+<%= render "shared/navbar1" %>
 
 <!-- PAGE -->
+<div class="w-full pt-32 h-screen bg-center bg-cover bg-pink-50 flex justify-center mx-auto">
+  <div id="parent" class="bg-zinc-50 flex flex-row h-fit shadow-md rounded-3xl gap-4">
+    <img src="<%= asset_path('vitrine.png') %>" alt="vitrine" class="aspect-square rounded-l-3xl h-44 m-1">
+    <div class="text-start align-text-top content-center mx-auto h-auto m-1 w-full min-w-[400px]">
+      <p class="font-extrabold text-xl text-zinc-800">Fleuriste Lilly Rose</p>
+      <p class="font-light text-lg text-zinc-500">4 Rue Castelnau</p>
+      <p class="font-light text-lg text-zinc-500">Espace Tiberghien</p>
+      <p class="font-light text-lg text-zinc-500">59126 Linselles</p>
+    </div>
+  </div>
+</div>
 
-<h1 class="px-10 pt-32">Contact</h1>
-
-<!-- FOOTER -->
-<%= render "shared/footer" %>
+  <!-- FOOTER -->
+  <%= render "shared/footer" %>

@@ -6,12 +6,43 @@
     </div>
     <div class="grow">
     </div>
-    <div class="justify-end space-x-2 text-white">
-      <i class="fa-brands fa-pinterest"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-tiktok"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-twitter"></i>
+    <!-- AFFICHAGE DESKTOP affichée quand la résolution est supérieure à la valeur de custombp (Tailwind.config.js) -->
+    <div class="justify-end">
+      <div class="custombp:hidden block text-white space-x-4">
+        <a href="<%= ENV['URL_FACEBOOK'] + ENV['USER_FACEBOOK'] %>" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="<%= ENV['URL_INSTAGRAM'] + ENV['USER_INSTAGRAM'] %>" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="<%= ENV['URL_TIKTOK'] + ENV['USER_TIKTOK'] %>" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="<%= ENV['URL_PINTEREST'] + ENV['USER_PINTEREST'] %>" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-pinterest"></i>
+        </a>
+        <a href="<%= ENV['URL_X_TWITTER'] + ENV['USER_X_TWITTER'] %>" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+      <!-- AFFICHAGE MOBILE affichée quand la résolution est inférieure à la valeur de custombp (Tailwind.config.js) -->
+      <div class="custombp:block hidden min-w-max text-white space-x-4">
+        <a href="<%= ENV['APP_FACEBOOK'] + ENV['USER_FACEBOOK'] %>" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="<%= ENV['APP_INSTAGRAM'] + ENV['USER_INSTAGRAM'] %>" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="<%= ENV['APP_TIKTOK'] + ENV['USER_TIKTOK'] %>" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="<%= ENV['APP_PINTEREST'] + ENV['USER_PINTEREST'] %>" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-pinterest"></i>
+        </a>
+        <a href="<%= ENV['APP_X_TWITTER'] + ENV['USER_X_TWITTER'] %>" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
     </div>
   </div>
 </div>
