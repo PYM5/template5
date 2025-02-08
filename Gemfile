@@ -63,3 +63,4 @@ end
 
 gem "tailwindcss-ruby", "~> 3.4"
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'net-smtp', '0.5.1'
