@@ -61,6 +61,6 @@ group :development do
 end
 
 
-gem "tailwindcss-ruby", "~> 3.4"
+gem "tailwindcss-ruby", "~> 4.0"
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'net-smtp', '0.5.1'
