@@ -1,98 +1,115 @@
 <div class="bg-[url('<%= asset_path('fleurs1.jpg') %>')]">
 </div>
 
-<div style="background-image: url('<%= asset_path('fleurs1.jpg') %>');">
-  <h2>salut</h2>
+<!-- Exemple Photo à gauche + Texte à droite avec un petit contour autour de la photo -->
+<div class="w-full pt-32 h-screen bg-center bg-cover bg-pink-50 flex justify-center mx-auto">
+  <div id="parent" class="bg-zinc-50 flex flex-row h-fit shadow-md rounded-3xl gap-4">
+    <img src="<%= asset_path('vitrine.png') %>" alt="vitrine" class="aspect-square rounded-l-3xl h-44 m-1">
+    <div class="text-start align-text-top content-center mx-auto h-auto m-1 w-full min-w-[400px]">
+      <p class="font-extrabold text-xl text-zinc-800">Fleuriste Lilly Rose</p>
+      <p class="font-light text-lg text-zinc-500">4 Rue Castelnau</p>
+      <p class="font-light text-lg text-zinc-500">Espace Tiberghien</p>
+      <p class="font-light text-lg text-zinc-500">59126 Linselles</p>
+    </div>
+  </div>
 </div>
-<div class="container mx-auto p-8 border-2 border-blue-800">
-  <h1 class="text-2xl font-bold">Bienvenue sur mon site</h1>
-  <p class="text-gray-700">Ceci est un exemple de projet utilisant Tailwind CSS, Ruby on Rails, et HTML.</p>
+
+<div class="bg-pink-50 pb-20 pt-32 w-screen h-screen">
+  <div class="w-10/12 flex justify-center mx-auto">
+    <div class="w-1/3 p-5 relative flex justify-center items-center">
+      <img src="<%= asset_path('vitrine.png') %>" alt="vitrine" class="w-2/3 h-auto rounded-lg shadow-xl">
+    </div>
+
+    <div class="p-5 flex flex-col items-start justify-center">
+      <p class="font-extrabold text-2xl text-zinc-800 pb-3">Fleuriste Lilly Rose</p>
+      <p class="font-light text-xl text-zinc-500 pb-1">4 Rue Castelnau</p>
+      <p class="font-light text-xl text-zinc-500 pb-1">Espace Tiberghien</p>
+      <p class="font-light text-xl text-zinc-500">59126 Linselles</p>
+    </div>
+  </div>
 </div>
 
-
-<div class="bg-cover bg-center border-2 border-red-500">
-  <img src="<%= asset_path('fleurs1.jpg') %>" alt="img">
-  <h1>coucou</h1>
-</div>
+<!-- <div class="w-full pt-8 h-screen bg-center bg-cover bg-pink-50 flex justify-center mx-auto">
+  <img src="<%= asset_path('vitrine.png') %>" alt="vitrine" class="w-screen h-fit">
+</div> -->
 
 
 
-<!-- CONTACT -->
-<div class="w-full h-screen bg-cover bg-gradient-to-r from-purple-100 to-pink-600">
-  <div class="pt-60">
-    <div class="max-w-screen-xl mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-      <div class="md:flex">
-        <div class="md:flex-shrink-0">
-          <img class="h-48 w-full object-cover md:w-48" src="<%= asset_path('vitrine.png') %>" alt="Store Image">
-        </div>
-        <div class="p-8">
-          <p class="block mt-1 text-sm text-pink-500 font-bold">Lilly Rose</p>
-          <p class="mt-2 text-gray-500">4 Rue Castelnau Espace Tiberghien, 59126 Linselles</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-    <div class="w-full pt-40 px-20 border-2 border-black ">
-      <div class="w-full h-60 p-10 bg-zinc-100 border-1 shadow-md rounded-3xl">
-        <div class="w-50 h-50">
-          <img src="<%= asset_path('vitrine.png') %>" alt="" >
-        </div>
-        <div>
-          <h1>Lilly Rose</h1>
-          <p>4 Rue Castelnau Espace Tiberghien, 59126 Linselles</p>
-          <i class="fa-regular fa-copy text-pink-500"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="w-full pt-20 h-screen bg-center bg-cover bg-pink-50">
-    <div class="container bg-zinc-50 w-8/12 mx-auto rounded-3xl flex flex-row justify-between items-center shadow-md gap-4">
-      <img src="<%= asset_path('vitrine.png') %>" alt="vitrine" class="aspect-square shadow-xl rounded-l-3xl h-full">
-      <div class="text-start align-text-top mx-auto h-full pt-4">
-        <p class="font-extrabold text-xl text-pink-500">Fleuriste Lilly Rose</p>
-        <p class="font-light text-lg text-pink-300">4 Rue Castelnau Espace Tiberghien</p>
-        <p class="font-light text-lg text-pink-300">59126 Linselles</p>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="w-full pt-20 h-screen bg-center bg-cover bg-pink-50">
-    <div class="container bg-zinc-50 h-60 w-8/12 mx-auto rounded-3xl flex flex-row justify-between items-center shadow-md gap-4">
-      <img src="<%= asset_path('vitrine.png') %>" alt="vitrine" class="aspect-square shadow-xl rounded-l-3xl h-full">
-      <div class="text-start align-text-top mx-auto h-full pt-4">
-        <p class="font-extrabold text-xl text-pink-500">Fleuriste Lilly Rose</p>
-        <p class="font-light text-lg text-pink-300 text-wrap">4 Rue Castelnau Espace Tiberghien</p>
-        <p class="font-light text-lg text-pink-300">59126 Linselles</p>
-
-      </div>
-    </div>
-  </div>
-
-
-  04/02/25
-  <!-- NAVBAR + MENU HOME -->
+<!-- NAVBAR + MENU HOME -->
 <%= render "shared/navbar1" %>
 
 <!-- PAGE -->
-<div class="w-full pt-32 h-screen bg-center bg-cover bg-pink-50">
-  <div class="container bg-zinc-50 w-3/12 mx-auto rounded-3xl shadow-md gap-4
-    flex flex-col justify-between items-center
-    md:w-5/12 md:flex-row
-    ">
-    <img src="<%= asset_path('vitrine.png') %>" alt="vitrine" class="aspect-square shadow-xl rounded-l-3xl h-auto  w-full md:w-1/3 md:h-full">
-    <div class="text-start align-text-top mx-auto h-auto md:h-full pt-4">
-      <p class="font-extrabold text-xl text-pink-500">Fleuriste Lilly Rose</p>
-      <p class="font-light text-lg text-pink-300">4 Rue Castelnau Espace Tiberghien</p>
-      <p class="font-light text-lg text-pink-300">59126 Linselles</p>
+
+<div id="background" class="bg-pink-50 w-screen h-screen">
+  <div id="bg-address" class="relative top-32 w-full h-4/5">
+    <div id="img-address" class="absolute inset-0 z-8">
+      <img src="<%= asset_path('vitrine2.png') %>" alt="Image de fond" class="h-full w-full object-cover">
+    </div>
+    <div id="txt-info" class="absolute z-10 top-10 left-10 w-100 h-4/5 bg-white/90 p-10">
+      <div>
+        <p class="font-extrabold text-3xl text-zinc-800 pb-3">Fleuriste Lilly Rose</p>
+      </div>
+      <div class="flex flex-row items-start gap-4">
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="font-bold text-xl text-zinc-500">
+          <p class="pb-1">4 Rue Castelnau</p>
+          <p class="pb-1">Espace Tiberghien</p>
+          <p class="">59126 Linselles</p>
+        </div>
+      </div>
+
+      <div class="pt-4 flex flex-row items-start gap-4">
+        <div>
+          <i class="fa-solid fa-square-parking"></i>
+        </div>
+        <div class="font-light text-xl text-zinc-500">
+          <p class="pb-1">Parking gratuit devant le magasin</p>
+        </div>
+      </div>
+
+      <div class="pt-4 flex flex-row items-start gap-4">
+        <div>
+          <i class="fa-solid fa-bus"></i>
+        </div>
+        <div class="font-light text-xl text-zinc-500">
+          <p class="pb-1">Ligne de Bus 86 - Arrêt Castelnau</p>
+        </div>
+      </div>
+
+      <div class="pt-4 flex flex-row items-start gap-4">
+        <div>
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="font-light text-xl text-zinc-500">
+          <p class="pb-1">03 28 52 36 79</p>
+        </div>
+      </div>
+
+      <div class="flex flex-row items-start justify-center gap-4 pt-10">
+        <div class="font-bold">
+          <p class="text-xl text-zinc-500">lundi</p>
+          <p class="text-xl text-zinc-500">mardi</p>
+          <p class="text-xl text-zinc-500">mercredi</p>
+          <p class="text-xl text-zinc-500">jeudi</p>
+          <p class="text-xl text-zinc-500">vendredi</p>
+          <p class="text-xl text-zinc-500">samedi</p>
+          <p class="text-xl text-zinc-500">dimanche</p>
+        </div>
+        <div class="font-light">
+          <p class="text-xl text-zinc-500">fermé</p>
+          <p class="text-xl text-zinc-500">10:00–12:30 et 15:00-19:00</p>
+          <p class="text-xl text-zinc-500">10:00–12:30 et 15:00-19:00</p>
+          <p class="text-xl text-zinc-500">10:00–12:30 et 15:00-19:00</p>
+          <p class="text-xl text-zinc-500">10:00–12:30 et 14:00-19:00</p>
+          <p class="text-xl text-zinc-500">10:00–12:30 et 14:00-19:00</p>
+          <p class="text-xl text-zinc-500">fermé</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-  <!-- FOOTER -->
-  <%= render "shared/footer" %>
+<!-- FOOTER -->
+<%= render "shared/footer" %>

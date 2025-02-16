@@ -1,18 +1,77 @@
 <!-- NAVBAR + MENU HOME -->
-<%= render "shared/navbar1" %>
+<%= render "shared/navbar2" %>
 
 <!-- PAGE -->
-<div class="w-full pt-32 h-screen bg-center bg-cover bg-pink-50 flex justify-center mx-auto">
-  <div id="parent" class="bg-zinc-50 flex flex-row h-fit shadow-md rounded-3xl gap-4">
-    <img src="<%= asset_path('vitrine.png') %>" alt="vitrine" class="aspect-square rounded-l-3xl h-44 m-1">
-    <div class="text-start align-text-top content-center mx-auto h-auto m-1 w-full min-w-[400px]">
-      <p class="font-extrabold text-xl text-zinc-800">Fleuriste Lilly Rose</p>
-      <p class="font-light text-lg text-zinc-500">4 Rue Castelnau</p>
-      <p class="font-light text-lg text-zinc-500">Espace Tiberghien</p>
-      <p class="font-light text-lg text-zinc-500">59126 Linselles</p>
+<div id="background" class="bg-pink-50 w-screen h-screen">
+  <div id="bg-address" class="relative top-32 w-full h-4/5 overflow-hidden">
+    <div id="img-address" class="absolute inset-0 z-8">
+      <img src="<%= asset_path('vitrine2.png') %>" alt="Image de fond" class="h-full w-full object-cover">
+    </div>
+    <div id="txt-info" class="absolute z-10 top-1/2 left-10 transform -translate-x-10 -translate-y-1/2 w-100 h-4/5 bg-white/90 p-10 flex flex-col justify-center ml-10 overflow-hidden">
+      <div>
+        <p class="font-extrabold text-3xl text-zinc-800 pb-3">Fleuriste Lilly Rose</p>
+      </div>
+      <div class="flex flex-row items-start gap-4">
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="font-bold text-xl text-zinc-500">
+          <p class="pb-1">4 Rue Castelnau</p>
+          <p class="pb-1">Espace Tiberghien</p>
+          <p class="">59126 Linselles</p>
+        </div>
+      </div>
+
+      <div class="pt-4 flex flex-row items-start gap-4">
+        <div>
+          <i class="fa-solid fa-square-parking"></i>
+        </div>
+        <div class="font-light text-xl text-zinc-500">
+          <p class="pb-1">Parking gratuit devant le magasin</p>
+        </div>
+      </div>
+
+      <div class="pt-4 flex flex-row items-start gap-4">
+        <div>
+          <i class="fa-solid fa-bus"></i>
+        </div>
+        <div class="font-light text-xl text-zinc-500">
+          <p class="pb-1">Ligne de Bus 86 - Arrêt Castelnau</p>
+        </div>
+      </div>
+
+      <div class="pt-4 flex flex-row items-start gap-4">
+        <div>
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="font-light text-xl text-zinc-500">
+          <p class="pb-1">03 28 52 36 79</p>
+        </div>
+      </div>
+
+      <div class="flex flex-row items-start gap-4 pt-10">
+        <div class="font-bold">
+          <p class="text-xl text-zinc-500">lundi</p>
+          <p class="text-xl text-zinc-500">mardi</p>
+          <p class="text-xl text-zinc-500">mercredi</p>
+          <p class="text-xl text-zinc-500">jeudi</p>
+          <p class="text-xl text-zinc-500">vendredi</p>
+          <p class="text-xl text-zinc-500">samedi</p>
+          <p class="text-xl text-zinc-500">dimanche</p>
+        </div>
+        <div class="font-light">
+          <p class="text-xl text-zinc-500">fermé</p>
+          <p class="text-xl text-zinc-500">10:00–12:30 et 15:00-19:00</p>
+          <p class="text-xl text-zinc-500">10:00–12:30 et 15:00-19:00</p>
+          <p class="text-xl text-zinc-500">10:00–12:30 et 15:00-19:00</p>
+          <p class="text-xl text-zinc-500">10:00–12:30 et 14:00-19:00</p>
+          <p class="text-xl text-zinc-500">10:00–12:30 et 14:00-19:00</p>
+          <p class="text-xl text-zinc-500">fermé</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-  <!-- FOOTER -->
-  <%= render "shared/footer" %>
+<!-- FOOTER -->
+<%= render "shared/footer" %>
